@@ -1,0 +1,1061 @@
+@font-face{
+    font-family: 'Open Sans';
+    src: url(open-sans.ttf);
+}
+
+:root{
+    font-size: 10px;
+    --fontti-perhe-leipäteksti: 'Open Sans', 'Helvetica Neue', sans-serif;
+    --fontti-perhe-otsikko: 'Open Sans', sans-serif;
+    --fontti-koko-leipäteksti: 1.4rem;
+    --fontti-koko-otsikko: 2rem;
+    --väri-musta: #000;
+    --väri-valkoinen: #fff;
+    --väri-ensisijainen: 0;
+    --väri-toissijainen: 0;
+    --väri-tausta: hsl(240, 60%, 15%);
+    --väri-teksti-yläpalkki: var(--väri-valkoinen);
+    --väri-teksti-alapalkki: var(--väri-valkoinen);
+    --väri-teksti-sisältö: rgb(206, 212, 218);
+    --väri-reunus: var(--väri-valkoinen);
+    --väli-x1: 0.8rem;
+    --väli-x2: 1.2rem;
+    --väli-x3: 1.6rem;
+    --väli-x4: 2rem;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.btn-text{
+    margin-left: var(--väli-x1);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 12px 0;
+    background-color: var(--väri-musta);
+    color: var(--väri-valkoinen);
+    min-height: 107px;
+}
+
+.github-info{
+    font-size: 1.4rem;
+    background-color: rgb(255, 145, 114);
+    color: white;
+    text-align: center;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.repository-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.reference-page-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__top-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+}
+
+.header__top-row__hamburger-menu{
+    display: none;
+    margin-right: 8px;
+}
+
+.header__top-row__logo {
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    color: orange;
+    margin: 0;
+}
+
+.header__top-row__search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--väri-valkoinen);
+    flex: 0.95;
+    border: 3px grey;
+    border-radius: 2px;
+    min-height: 50px;
+    min-width: 200px;
+}
+
+.search-icon{
+    min-width: 27px;
+    min-height: 27px;
+    padding: 4px 12px;
+}
+
+.search-placeholder{
+    color: var(--väri-musta);
+    font-size: 16px;
+    font-family: var(--fontti-perhe-leipäteksti);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: none;
+    display: block;
+    box-sizing: content-box;
+    outline: none;
+    width: 100%;
+}
+
+.header__top-row__login-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--väri-musta);
+    color: var(--väri-valkoinen);
+    padding: 0 var(--väli-x1);
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: 16px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 160px;
+    max-height: 50px;
+}
+
+.login-button--black{
+    display: flex;
+}
+
+.login-button--black{
+    display: none;
+}
+
+.header__top-row__login-button:hover{
+    color: var(--väri-musta);
+    background-color: var(--väri-valkoinen);
+    border: 1px solid var(--väri-valkoinen);
+    border-radius: 2px;
+    cursor: pointer;
+    min-width: 48px;
+    min-height: 48px;
+    max-width: 158px;
+    max-height: 48px;
+}
+
+.header__top-row__login-button:hover .login-button--black{
+    display: flex;
+}
+
+.header__top-row__login-button:hover .login-button--white{
+    display: none;
+    margin-left: 8px;
+}
+
+.header__top-row__basket-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 2px var(--väri-valkoinen);
+    border-radius: 2px;
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    align-self: center;
+    justify-content: center;
+}
+
+.header__top-row__basket-icon:hover{
+    background-color: var(--väri-valkoinen);
+}
+
+.cart__icon--black{
+    display: none;
+}
+
+.cart__icon--white{
+    display: flex;
+}
+
+.header__top-row__basket-icon:hover .cart__icon--white{
+    display: none;
+}
+
+.header__top-row__basket-icon:hover .cart__icon--black{
+    display: flex;
+}
+
+.header__bottom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 43px;
+    max-height: 43px;
+}
+
+.header__bottom-row__li-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-category:link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    min-height: 40px;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: var(--fontti-perhe-leipäteksti);
+    margin: 0;
+    padding: 13px 10px;
+}
+
+.item-category:hover{
+    background-color: var(--väri-valkoinen);
+    color: orange;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 20%);
+    color: var(--väri-valkoinen);
+}
+
+.footer__row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    min-height: 320px;
+}
+
+.footer__row1__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 27px;
+    min-width: 260px;
+    min-height: 275px;
+    max-width: 260px;
+    max-height: 290px;
+}
+
+.asiakaspalvelu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: solid 1px grey;
+    min-width: 238px;
+    max-width: 238px;
+    padding-right: 11px;
+}
+
+.asiakaspalvelu__header {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+}
+
+.asiakaspalvelu__visiting-hours {
+    display: flex;
+    flex-direction: row;
+}
+
+.asiakaspalvelu__visiting-hours__dates {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    padding-right: 12px;
+}
+
+.asiakaspalvelu__visiting-hours__times {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    padding-right: 12px;
+}
+
+.asiakaspalvelu__tel {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+}
+
+.tel-icon{
+    display: flex;
+    flex-direction: row;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: var(--väli-x1);
+}
+
+.asiakaspalvelu__email {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    margin-bottom: 16px;
+}
+
+.email-icon{
+    display: flex;
+    flex-direction: row;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: var(--väli-x1);
+}
+
+.yritysmyynti {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.yritysmyynti__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.yritysmyynti__visiting-hours {
+    display: flex;
+    flex-direction: row;
+}
+
+.yritysmyynti__visiting-hours__dates {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    padding-right: 12px;
+}
+
+.yritysmyynti__visiting-hours__times {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    padding-right: 12px;
+}
+
+.yritysmyynti__tel {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+}
+
+.yritysmyynti__email {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+}
+
+.myymälä-turku {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 25px;
+    min-width: 260px;
+    min-height: 275px;
+    max-width: 260px;
+    max-height: 275px;
+}
+
+.myymälä-turku__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.myymälä-turku__visiting-hours {
+    display: flex;
+    flex-direction: column;
+}
+
+.visiting-hours__time {
+    display: flex;
+    flex-direction: row;
+}
+
+.visiting-hours__time__date, .visiting-hours__time__times {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    padding-right: 12px;
+}
+
+.visiting-hours__time__saturday{
+    padding-right: 38px;
+}
+
+.myymälä-turku__text {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+    margin-bottom: 16px;
+}
+
+.myymälä-turku__location {
+    display: flex;
+    flex-direction: row;
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: sans-serif;
+}
+
+.myymälä-turku__location-icon {
+    display: flex;
+    flex-direction: row;
+    max-width: 20px;
+    max-height: 20px;
+    margin-right: calc(var(--väli-x2) - var(--väli-x1));
+}
+
+.myymälä-turku__address {
+    display: flex;
+    flex-direction: row;
+}
+
+.yhteisöt {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 25px;
+    max-width: 260px;
+    max-height: 160px;
+}
+
+.yhteisöt__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.yhteisöt__media-links {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.media-links__li-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-link > div{
+    margin-right: var(--väli-x2);
+}
+
+.social-media-link:link{
+    color: var(--väri-musta);
+}
+
+.tilaa-uutiskirje {
+    display: flex;
+    flex-direction: column;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 25px;
+    max-width: 260px;
+    max-height: 160px;
+}
+
+.tilaa-uutiskirje__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.tilaa-uutiskirje__text {
+    display: flex;
+    flex-direction: row;
+}
+
+.tilaa-uutiskirje__button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: orange;
+    color: var(--väri-valkoinen);
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 6px 12px 6px 12px;
+    font-family: "Open Sans", sans-serif, Helvetica;
+    border: 3px orange;
+    border-radius: 3px;
+    max-width: 158px;
+    min-width: 158px;
+    margin-top: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: solid 1px grey;
+    padding: 10px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 11px;
+    padding-right: 11px;
+    min-width: 260px;
+    min-height: 290px;
+    max-width: 260px;
+    max-height: 330px;
+}
+
+.info__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.info__link-li {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.link-li__li-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link > div{
+    margin-right: var(--väli-x1);
+}
+
+.shop-in-shops {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    max-width: 260px;
+    max-height: 210px;
+}
+
+.shop-in-shops__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.shop-in-shops__list-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.list-concainer__li1 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.li1__li-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.li1__li-item::after{
+    content: "|";
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.li1__li-item:last-child::after {
+    content: none;
+}
+
+.li2__li-item::after{
+    content: "|";
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.li2__li-item:last-child::after{
+    content: none;
+}
+
+a:link{
+    font-size: var(--fontti-koko-leipäteksti);
+    color: var(--väri-valkoinen);
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+a:hover{
+    color: orange;
+}
+
+.list-container__li2 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.li2__li-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.artikkelit-ja-blogit {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-right: 12px;
+    min-width: 260px;
+    min-height: 210px;
+    max-width: 260px;
+    max-height: 210px;
+}
+
+.artikkelit-ja-blogit__header {
+    display: flex;
+    flex-direction: row;
+}
+
+.artikkelit-ja-blogit__link-li {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.a-link-li__li-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.sertifikaatit-ja-palkinnot {
+    display: flex;
+    flex-direction: column;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.sertifikaatit-ja-palkinnot__header {
+    display: flex;
+    flex-direction: row;
+    max-width: 180px;
+    min-width: 180px;
+}
+
+.sertifikaatit-ja-palkinnot__imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.imgs__li-item {
+    display: flex;
+    flex-direction: row;
+    min-height: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.sertifikaatti{
+    border: solid 1px blue;
+    color: var(--väri-valkoinen);
+    background-color: blue;
+    border-radius: 50%;
+    padding-top: 38px;
+    padding-left: 12px;
+    margin-right: 40px;
+}
+
+.palkinto{
+    border: solid 1px orangered;
+    border-radius: 50%;
+    color: var(--väri-valkoinen);
+    background-color: orangered;
+    padding-top: 38px;
+    padding-left: 22px;
+}
+
+.row3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--väri-musta);
+    color: var(--väri-valkoinen);
+    padding-bottom: 16px;
+    padding-top: 16px;
+}
+
+.row3__text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.asiakaspalvelu__header, .yritysmyynti__header,
+.myymälä-turku__header, .yhteisöt__header, .tilaa-uutiskirje__header,
+.info__header, .shop-in-shops__header, .artikkelit-ja-blogit__header,
+.sertifikaatit-ja-palkinnot__header{
+    margin-bottom: 8px;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: var(--fontti-koko-otsikko);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.asiakaspalvelu__visiting-hours, .yritysmyynti__visiting-hours, .myymälä-turku__visiting-hours{
+    margin: 20px 0;
+}
+
+.page-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 14px;
+    max-height: 14px;
+    min-width: 100%;
+    max-width: 100%;
+    background-color: var(--väri-valkoinen);
+    color: var(--väri-musta);
+}
+
+.header__top-row__login-button, .a-link-li__li-item, .li1__li-item, .li2__li-item, .link-li__li-item, .tilaa-uutiskirje__text, .row3__text{
+    font-size: var(--fontti-koko-leipäteksti);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer__content-box{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    min-height: 730px;
+    padding: 27px 12px;
+    margin: 0 58px;
+    background-color: hsl(0, 0%, 20%);
+}
+
+.page-content{
+    display: flex;
+    flex-direction: row;
+    margin: 0 58px;
+    padding: 0 12px;
+}
+
+.page-content__row{
+    display: flex;
+    flex-direction: row;
+    margin: 0 -12px;
+}
+
+.product-list-row{
+    display: flex;
+    flex-direction: row;
+    padding: 0 12px 16px;
+    max-width: none;
+    max-width: 760px;
+}
+
+.page-content__product-box{
+    display: flex;
+    flex-direction: column;
+    margin: 16px var(--väli-x1) 0;
+    border-radius: 3px;
+    border: 0.5px solid rgb(60, 66, 74);
+    background-color: hsl(0, 0%, 20%);
+    max-width: 170px;
+}
+
+.product-box__photo{
+    display: flex;
+    min-width: 170px;
+    min-height: 170px;
+    max-height: 170px;
+    max-width: 170px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid rgb(60, 66, 74);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: var(--väri-valkoinen);
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    padding: var(--väli-x1);
+    background-color: hsl(0, 0%, 20%);
+    min-height: 143px;
+}
+
+.product-description{
+    display: flex;
+    margin: 0 0 3px;
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.product-description__text:link{
+    display: block;
+    color: rgb(206, 212, 218);
+}
+
+.product-description__text>span{
+    color: orange;
+}
+
+.product-index{
+    display: flex;
+    font-family: var(--fontti-perhe-leipäteksti);
+    color: rgb(206, 212, 218);
+    font-size: 9px;
+    font-weight: 350;
+    margin: -2px 0 2px;
+    text-transform: uppercase
+}
+
+.product-box__price-and-button{
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--väli-x1) var(--väli-x1) var(--väli-x1);
+    margin: 0;
+    background-color: hsl(0, 0%, 20%);
+    min-height: 96px;
+}
+
+.product-price{
+    display: flex;
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: var(--fontti-koko-otsikko);
+    font-weight: 600;
+    color: rgb(206, 212, 218);
+    margin-bottom: 9px;
+}
+
+.product-availability{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: 11.6px;
+    font-weight: 400;
+    color: rgb(206, 212, 218);
+    align-items: center;
+}
+
+.product-availability__icon-available{
+    display: flex;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+    border: 0.5px solid green;
+    border-radius: 50%;
+    background-color: green;
+    color: green;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.product-availability__icon-unavailable{
+    display: flex;
+    min-width: 12px;
+    min-height: 12px;
+    max-width: 12px;
+    max-height: 12px;
+    border: 0.5px solid red;
+    border-radius: 50%;
+    background-color: red;
+    color: red;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+}
+
+.product-availability__text{
+    display: flex;
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.add-basket-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--väli-x1);
+    min-width: 155px;
+    min-height: 31px;
+    max-width: 155px;
+    max-height: 31px;
+    background-color: green;
+    color: var(--väri-valkoinen);
+    border-radius: 3px;
+}
+
+.add-basket-container:hover{
+    background-color: hsl(120, 100%, 20%);
+    cursor: pointer;
+}
+
+.add-basket__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.add-basket__link:link{
+    display: block;
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: var(--fontti-koko-leipäteksti);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.add-basket__link:hover{
+    color: var(--väri-valkoinen);
+}
+
+.ducky-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 350px;
+    padding: 0 12px;
+    color: var(--väri-musta);
+}
+
+.ducky-banner__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 380px;
+    min-height: 350px;
+    position: relative;
+    background-color: var(--väri-musta);
+    color: var(--väri-valkoinen);
+    justify-items: center;
+}
+
+.explore-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 160px;
+    min-height: 35px;
+    max-width: 160px;
+    max-height: 35px;
+    background-color: var(--väri-valkoinen);
+    border-radius: 3px;
+    position: absolute;
+    top: 588px;
+}
+
+.explore-products-button:link{
+    display: block;
+    color: var(--väri-musta);
+    font-family: var(--fontti-perhe-leipäteksti);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+section{
+    background-color: var(--väri-tausta);
+}
+
+@media (max-width: 700px) {
+    .header__top-row__login-button > .btn-text{
+        display: none;
+    }
+
+    .product-list-row{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1000px){
+    .footer__row1{
+        flex-wrap: wrap;
+    }
+
+    .row2{
+        flex-wrap: wrap;
+    }
+
+    .page-content{
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .ducky-banner{
+        display: none;
+    }
+
+    .header__bottom-row{
+        display: none;
+    }
+
+    .header{
+        min-height: 75px;
+    }
+
+    .header__top-row__hamburger-menu{
+        display: flex;
+    }
+}
