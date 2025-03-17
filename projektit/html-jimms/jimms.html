@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="teht5.css">
+
+</head>
+
+<body>
+    <header class="github-info">
+        <div>Harjoitus: Jimm's sivu</div>
+        <div class="repository-link">
+            <div>Repositorio:</div>
+            <a href="https://yuliia008.github.io/ohjelmointi-harjoitukset/">yuliia008/ohjelmointi-harjoitukset</a>
+        </div>
+        <div class="reference-page-link">
+            <div>Referenssi:</div>
+            <a href="https://www.jimms.fi/">Jimm's sivu</a>
+        </div>
+    </header>
+    <main>
+        <header class="header">
+            <div class="header__top-row">
+                <div class="header__top-row__hamburger-menu"><img src="icons/menu-white.svg"></div>
+                <h1 class="header__top-row__logo">Jimms</h1>
+                <div class="header__top-row__search-bar">
+                    <div class="search-icon"><img src="icons/search.svg"></div>
+                    <input type="text" placeholder="Hae tuotteista" class="search-placeholder"></input>
+                </div>
+                <button type="button" class="header__top-row__login-button">
+                    <div class="login-button-images">
+                        <img src="icons/user-white.svg" class="login-button--white">
+                        <img src="icons/user-black.svg" class="login-button--black">
+                    </div>
+                    <div class="btn-text">Kirjaudu / Luo tili</div>
+                </button>
+                <div class="header__top-row__basket-icon">
+                    <img class="cart__icon cart__icon--white" src="icons/cart-white.svg">
+                    <img class="cart__icon cart__icon--black" src="icons/cart-black.svg">
+                </div>
+            </div>
+            <ul class="header__bottom-row">
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Tietokoneet</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Komponentit</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Oheislaitteet</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Pelaaminen</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Sim Racing</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Verkkotuotteet</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Tarvikkeet</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Erikoistuotteet</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Ohjelmistot</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Palvelut</a>
+                </li>
+                <li class="header__bottom-row__li-item">
+                    <a class="item-category" href="#">Kampanjat</a>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <div class="page-content"> <!-- Block with paddings and margins from edges -->
+                <div class="page-content__row"> <!-- Flexbox with all content in the row -->
+                    <div class="product-list-row">
+                        <!-- List of product displayed as a flexbox (idk why orig. webpage has two of em)-->
+    
+                        <div class="page-content__product-box"> <!-- Box with one product (flex and container)-->
+                            <div class="product-box__photo">Kuva</div>
+                            <div class="product-info">
+                                <h5 class="product-description">
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor, sit
+                                        amet consectetur adipisicing elit. Incidunt, asperiores deleniti. Officiis.</a>
+                                </h5>
+                                <div class="product-index">tuotenumero/indeksi</div>
+                            </div>
+                            <div class="product-box__price-and-button">
+                                <div class="product-price">149,90 €</div>
+                                <div class="product-availability">
+                                    <div class="product-availability__icon-available">o</div>
+                                    <div class="product-availability__text">Varastossa</div>
+                                </div>
+                                <div class="add-basket-container">
+                                    <div class="add-basket__icon"><img src="icons/cart-white.svg"></div>
+                                    <a href="#" class="add-basket__link">Lisää koriin</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="page-content__product-box">
+                            <div class="product-box__photo">Kuva</div>
+                            <div class="product-info">
+                                <h5 class="product-description">
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor sit,
+                                        amet consectetur adipisicing elit. Magni beatae illum dolorum!</a>
+                                </h5>
+                                <div class="product-index">tuotenumero/indeksi</div>
+                            </div>
+                            <div class="product-box__price-and-button">
+                                <div class="product-price">129,90 €</div>
+                                <div class="product-availability">
+                                    <div class="product-availability__icon-available">o</div>
+                                    <div class="product-availability__text">Varastossa</div>
+                                </div>
+                                <div class="add-basket-container">
+                                    <div class="add-basket__icon"><img src="icons/cart-white.svg"></div>
+                                    <a href="#" class="add-basket__link">Lisää koriin</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="page-content__product-box">
+                            <div class="product-box__photo">Kuva</div>
+                            <div class="product-info">
+                                <h5 class="product-description">
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Sit!</a>
+                                </h5>
+                                <div class="product-index">tuotenumero/indeksi</div>
+                            </div>
+                            <div class="product-box__price-and-button">
+                                <div class="product-price">124,90 €</div>
+                                <div class="product-availability">
+                                    <div class="product-availability__icon-unavailable">o</div>
+                                    <div class="product-availability__text">Tulossa</div>
+                                </div>
+                                <div class="add-basket-container">
+                                    <div class="add-basket__icon"><img src="icons/cart-white.svg"></div>
+                                    <a href="#" class="add-basket__link">Lisää koriin</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="page-content__product-box">
+                            <div class="product-box__photo">Kuva</div>
+                            <div class="product-info">
+                                <h5 class="product-description">
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor sit
+                                        amet consectetur adipisicing elit. Iste similique ipsum incidunt ab?</a>
+                                </h5>
+                                <div class="product-index">tuotenumero/indeksi</div>
+                            </div>
+                            <div class="product-box__price-and-button">
+                                <div class="product-price">109,90 €</div>
+                                <div class="product-availability">
+                                    <div class="product-availability__icon-available">o</div>
+                                    <div class="product-availability__text">Varastossa</div>
+                                </div>
+                                <div class="add-basket-container">
+                                    <div class="add-basket__icon"><img src="icons/cart-white.svg"></div>
+                                    <a href="#" class="add-basket__link">Lisää koriin</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="ducky-banner"> <!-- Ducky banner and button "explore other products"-->
+                        <h3 class="ducky-banner__img">Ducky</h3>
+                        <div class="explore-button-container">
+                            <a href="#" class="explore-products-button">Listaa tuotteet</a>
+                            <!-- Must be displayed as a block -->
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="footer__content-box">
+                <div class="footer__row1">
+                    <div class="footer__row1__box">
+                        <div class="asiakaspalvelu">
+                            <h2 class="asiakaspalvelu__header">Asiakaspalvelu</h2>
+                            <div class="asiakaspalvelu__content">
+
+                                <div class="asiakaspalvelu__visiting-hours">
+                                    <div class="asiakaspalvelu__visiting-hours__dates visiting_hours__dates">Ma-Su</div>
+                                    <div class="asiakaspalvelu__visiting-hours__times">24/7</div>
+                                </div>
+                                <div class="asiakaspalvelu__tel">
+                                    <div class="tel-icon"><img src="icons/call.svg"></div>
+                                    <div class="tel">+358 29 70 70700</div>
+                                </div>
+                                <div class="asiakaspalvelu__email">
+                                    <div class="email-icon"><img src="icons/mail.svg"></div>
+                                    <div class="email">asiakaspalvelu@jimms.fi</div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div class="yritysmyynti">
+                            <h2 class="yritysmyynti__header">Yritysmyynti</h2>
+                            <div class="yritysmyynti__visiting-hours">
+                                <div class="yritysmyynti__visiting-hours__dates">Ma-Su</div>
+                                <div class="yritysmyynti__visiting-hours__times">24/7</div>
+                            </div>
+                            <div class="yritysmyynti__tel">
+                                <div class="tel-icon"><img src="icons/call.svg"></div>
+                                <div class="tel">+358 29 70 70700</div>
+                            </div>
+                            <div class="yritysmyynti__email">
+                                <div class="email-icon"><img src="icons/mail.svg"></div>
+                                <div class="email">yritysmyynti@jimms.fi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="myymälä-turku">
+                        <h2 class="myymälä-turku__header">Myymälä Turku</h2>
+    
+                        <div class="myymälä-turku__visiting-hours visiting-hours">
+                            <div class="visiting-hours__time">
+                                <div class="visiting-hours__time__date">Ma-Pe</div>
+                                <div class="visiting-hours__time__times">11:00-19:00</div>
+                            </div>
+                            <div class="visiting-hours__time">
+                                <div class="visiting-hours__time__date visiting-hours__time__saturday">La</div>
+                                <div class="visiting-hours__time__times">10:00-16:00</div>
+                            </div>
+                        </div>
+                        <div class="myymälä-turku__text">Maksuvälineenä käyvät yleisimmät pankki- ja luottokortit sekä
+                            mobiilimaksutavat. Ei käteismaksumahdollisuutta.</div>
+                        <div class="myymälä-turku__location">
+                            <div class="myymälä-turku__location-icon"><img src="icons/location.svg"></div>
+                            <div class="myymälä-turku__address">Lukkosepänkatu 7 20320 Turku</div>
+                        </div>
+    
+                    </div>
+                    <div class="yhteisöt">
+                        <h2 class="yhteisöt__header">Yhteisöt</h2>
+                        <ul class="yhteisöt__media-links">
+                            <li class="media-links__li-item">
+                                <a class="social-media-link" href="#">
+                                    <div><img src="icons/facebook-brands.svg"></div>
+                                </a>
+                            </li>
+                            <li class="media-links__li-item">
+                                <a class="social-media-link" href="#">
+                                    <div><img src="icons/instagram-brands.svg"></div>
+                                </a>
+                            </li>
+                            <li class="media-links__li-item">
+                                <a class="social-media-link" href="#">
+                                    <div><img src="icons/twitter-brands.svg"></div>
+                                </a>
+                            </li>
+                            <li class="media-links__li-item">
+                                <a class="social-media-link" href="#">
+                                    <div><img src="icons/youtube-brands.svg"></div>
+                                </a>
+                            </li>
+                            <li class="media-links__li-item">
+                                <a class="social-media-link" href="#">
+                                    <div><img src="icons/tiktok-brands.svg"></div>
+                                </a>
+                            </li>
+                            <li class="media-links__li-item">
+                                <a class="social-media-link" href="#">
+                                    <div><img src="icons/linkedin-brands.svg"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tilaa-uutiskirje">
+                        <h2 class="tilaa-uutiskirje__header">Tilaa uutiskirje</h2>
+                        <div class="tilaa-uutiskirje__text">Tilaa Jimm´sin uutiskirje ja saat ensimmäisten joukossa tietoa
+                            tarjouksista, tapahtumista ja uusista tuotteista</div>
+                        <button type="button" class="tilaa-uutiskirje__button">Tilaa uutiskirje</button>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="info">
+                        <h2 class="info__header">Info</h2>
+                        <ul class="info__link-li">
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/contact.svg"></div>Yhteystiedot
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/shipping.svg"></div>Toimitustavat
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/euro.svg"></div>Maksutavat
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/info.svg"></div>Takuupalautus
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/tools.svg"></div>Palvelut ja huolto
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/help.svg"></div>Usein kysytyt kysymykset
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/building.svg"></div>Yritysmyynti
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/work.svg"></div>Ura Jimm´sillä
+                                </a>
+                            </li>
+                            <li class="link-li__li-item">
+                                <a class="nav-link" href="#">
+                                    <div><img src="icons/document.svg"></div>Jimm´s Tuoteturva
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="shop-in-shops">
+                        <h2 class="shop-in-shops__header">Shop-in-shops</h2>
+                        <div class="shop-in-shops__list-container">
+                            <ul class="list-concainer__li1">
+                                <li class="li1__li-item">
+                                    <a href="#">APNX</a>
+                                </li>
+                                <li class="li1__li-item">
+                                    <a href="#">Ducky</a>
+                                </li>
+                                <li class="li1__li-item">
+                                    <a href="#">Endgame Gear</a>
+                                </li>
+                                <li class="li1__li-item">
+                                    <a href="#">Kolink</a>
+                                </li>
+                                <li class="li1__li-item">
+                                    <a href="#">Nitro Concepts</a>
+                                </li>
+                                <li class="li1__li-item">
+                                    <a href="#">noblechairs</a>
+                                </li>
+                                <li class="li1__li-item">
+                                    <a href="#">Steamplify</a>
+                                </li>
+                            </ul>
+                            <ul class="list-container__li2">
+                                <li class="li2__li-item">
+                                    <a href="#">Asus</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Acer</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Akasa</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Cooler Master</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Corsair</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Fractal Design</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Gigabyte</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Logitech</a>
+                                </li>
+                                <li class="li2__li-item">
+                                    <a href="#">Phanteks</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="artikkelit-ja-blogit">
+                        <h2 class="artikkelit-ja-blogit__header">Artikkelit ja blogi</h2>
+                        <ul class="artikkelit-ja-blogit__link-li">
+                            <li class="a-link-li__li-item">
+                                <a href="#">Jimm´s oppaat</a>
+                            </li>
+                            <li class="a-link-li__li-item">
+                                <a href="#">Jimm´s blogi</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sertifikaatit-ja-palkinnot">
+                        <h2 class="sertifikaatit-ja-palkinnot__header">Sertifikaatit ja palkinnot</h2>
+                        <ul class="sertifikaatit-ja-palkinnot__imgs">
+                            <li class="imgs__li-item sertifikaatti">Sertifikaatti</li>
+                            <li class="imgs__li-item palkinto">Palkinto</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row3">
+                <div class="row3__text">Takuu- ja toimitusehdot | Tietosuojaseloste</div>
+                <div class="row3__text"> 2024 Jimm´s PC-Store Oy</div>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
