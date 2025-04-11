@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Html-harjoitustyö</title>
     <link rel="stylesheet" href="tyylit.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,21 +11,36 @@
 
 <body>
     <header class="github-info">
-        <div>Harjoitus: Jimm's sivu</div>
+        <div>Harjoitus: yksinkertainen kaupan etusivu</div>
         <div class="repository-link">
             <div>Repositorio:</div>
             <a href="https://yuliia008.github.io/ohjelmointi-harjoitukset/">yuliia008/ohjelmointi-harjoitukset</a>
         </div>
         <div class="reference-page-link">
             <div>Referenssi:</div>
-            <a href="https://www.jimms.fi/">Jimm's sivu</a>
+            <a href="https://www.jimms.fi/">Jimms-sivu</a>
         </div>
     </header>
     <main>
         <header class="header">
+            <div class="header__extra-top-row-mobile">
+                <h1 class="header__extra-top-row__logo">Kauppa</h1>
+                <div class="header__extra-top-row__button-container">
+                    <button type="button" class="header__extra-top-row__login-button">
+                        <div class="login-button-images">
+                            <img src="icons/user-white.svg" class="login-button--white">
+                            <img src="icons/user-black.svg" class="login-button--black">
+                        </div>
+                    </button>
+                    <div class="header__extra-top-row__basket-icon">
+                        <img class="cart__icon cart__icon--white" src="icons/cart-white.svg">
+                        <img class="cart__icon cart__icon--black" src="icons/cart-black.svg">
+                    </div>
+                </div>
+            </div>
             <div class="header__top-row">
                 <div class="header__top-row__hamburger-menu"><img src="icons/menu-white.svg"></div>
-                <h1 class="header__top-row__logo">Jimms</h1>
+                <h1 class="header__top-row__logo">Kauppa</h1>
                 <div class="header__top-row__search-bar">
                     <div class="search-icon"><img src="icons/search.svg"></div>
                     <input type="text" placeholder="Hae tuotteista" class="search-placeholder"></input>
@@ -83,12 +98,13 @@
                 <div class="page-content__row"> <!-- Flexbox with all content in the row -->
                     <div class="product-list-row">
                         <!-- List of product displayed as a flexbox (idk why orig. webpage has two of em)-->
-    
+
                         <div class="page-content__product-box"> <!-- Box with one product (flex and container)-->
                             <div class="product-box__photo">Kuva</div>
                             <div class="product-info">
                                 <h5 class="product-description">
-                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor, sit
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor,
+                                        sit
                                         amet consectetur adipisicing elit. Incidunt, asperiores deleniti. Officiis.</a>
                                 </h5>
                                 <div class="product-index">tuotenumero/indeksi</div>
@@ -105,12 +121,13 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="page-content__product-box">
                             <div class="product-box__photo">Kuva</div>
                             <div class="product-info">
                                 <h5 class="product-description">
-                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor sit,
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor
+                                        sit,
                                         amet consectetur adipisicing elit. Magni beatae illum dolorum!</a>
                                 </h5>
                                 <div class="product-index">tuotenumero/indeksi</div>
@@ -127,12 +144,13 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="page-content__product-box">
                             <div class="product-box__photo">Kuva</div>
                             <div class="product-info">
                                 <h5 class="product-description">
-                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor sit
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor
+                                        sit
                                         amet consectetur adipisicing elit. Sit!</a>
                                 </h5>
                                 <div class="product-index">tuotenumero/indeksi</div>
@@ -149,12 +167,13 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="page-content__product-box">
                             <div class="product-box__photo">Kuva</div>
                             <div class="product-info">
                                 <h5 class="product-description">
-                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor sit
+                                    <a class="product-description__text" href="#"><span>Ducky</span> Lorem ipsum dolor
+                                        sit
                                         amet consectetur adipisicing elit. Iste similique ipsum incidunt ab?</a>
                                 </h5>
                                 <div class="product-index">tuotenumero/indeksi</div>
@@ -172,7 +191,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div class="ducky-banner"> <!-- Ducky banner and button "explore other products"-->
                         <h3 class="ducky-banner__img">Ducky</h3>
                         <div class="explore-button-container">
@@ -181,10 +200,10 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </section>
-    
+
         <footer class="footer">
             <div class="footer__content-box">
                 <div class="footer__row1">
@@ -203,10 +222,10 @@
                                 </div>
                                 <div class="asiakaspalvelu__email">
                                     <div class="email-icon"><img src="icons/mail.svg"></div>
-                                    <div class="email">asiakaspalvelu@jimms.fi</div>
+                                    <div class="email">asiakaspalvelu@kauppa</div>
                                 </div>
                             </div>
-    
+
                         </div>
                         <div class="yritysmyynti">
                             <h2 class="yritysmyynti__header">Yritysmyynti</h2>
@@ -220,13 +239,13 @@
                             </div>
                             <div class="yritysmyynti__email">
                                 <div class="email-icon"><img src="icons/mail.svg"></div>
-                                <div class="email">yritysmyynti@jimms.fi</div>
+                                <div class="email">yritysmyynti@kauppa</div>
                             </div>
                         </div>
                     </div>
                     <div class="myymälä-turku">
                         <h2 class="myymälä-turku__header">Myymälä Turku</h2>
-    
+
                         <div class="myymälä-turku__visiting-hours visiting-hours">
                             <div class="visiting-hours__time">
                                 <div class="visiting-hours__time__date">Ma-Pe</div>
@@ -243,7 +262,7 @@
                             <div class="myymälä-turku__location-icon"><img src="icons/location.svg"></div>
                             <div class="myymälä-turku__address">Lukkosepänkatu 7 20320 Turku</div>
                         </div>
-    
+
                     </div>
                     <div class="yhteisöt">
                         <h2 class="yhteisöt__header">Yhteisöt</h2>
@@ -282,7 +301,8 @@
                     </div>
                     <div class="tilaa-uutiskirje">
                         <h2 class="tilaa-uutiskirje__header">Tilaa uutiskirje</h2>
-                        <div class="tilaa-uutiskirje__text">Tilaa Jimm´sin uutiskirje ja saat ensimmäisten joukossa tietoa
+                        <div class="tilaa-uutiskirje__text">Tilaa Kaupan uutiskirje ja saat ensimmäisten joukossa
+                            tietoa
                             tarjouksista, tapahtumista ja uusista tuotteista</div>
                         <button type="button" class="tilaa-uutiskirje__button">Tilaa uutiskirje</button>
                     </div>
@@ -328,12 +348,12 @@
                             </li>
                             <li class="link-li__li-item">
                                 <a class="nav-link" href="#">
-                                    <div><img src="icons/work.svg"></div>Ura Jimm´sillä
+                                    <div><img src="icons/work.svg"></div>Ura
                                 </a>
                             </li>
                             <li class="link-li__li-item">
                                 <a class="nav-link" href="#">
-                                    <div><img src="icons/document.svg"></div>Jimm´s Tuoteturva
+                                    <div><img src="icons/document.svg"></div>Tuoteturva
                                 </a>
                             </li>
                         </ul>
@@ -399,10 +419,10 @@
                         <h2 class="artikkelit-ja-blogit__header">Artikkelit ja blogi</h2>
                         <ul class="artikkelit-ja-blogit__link-li">
                             <li class="a-link-li__li-item">
-                                <a href="#">Jimm´s oppaat</a>
+                                <a href="#">Kaupan oppaat</a>
                             </li>
                             <li class="a-link-li__li-item">
-                                <a href="#">Jimm´s blogi</a>
+                                <a href="#">Kaupan blogi</a>
                             </li>
                         </ul>
                     </div>
@@ -417,7 +437,7 @@
             </div>
             <div class="row3">
                 <div class="row3__text">Takuu- ja toimitusehdot | Tietosuojaseloste</div>
-                <div class="row3__text"> 2024 Jimm´s PC-Store Oy</div>
+                <div class="row3__text"> 2025</div>
             </div>
         </footer>
     </main>
