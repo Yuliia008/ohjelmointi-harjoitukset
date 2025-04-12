@@ -22,6 +22,7 @@
     --väli-x2: 1.2rem;
     --väli-x3: 1.6rem;
     --väli-x4: 2rem;
+    --leveys-sivu: 1200px;
 }
 
 body {
@@ -87,18 +88,18 @@ body {
     text-transform: uppercase;
     color: orange;
     margin: 0;
+    font-family: 'Open Sans';
 }
 
 .header__top-row__search-bar {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: var(--väri-valkoinen);
+    background-color: rgb(26, 30, 33);
     flex: 0.95;
-    border: 3px grey;
+    border: 2px solid grey;
     border-radius: 2px;
     min-height: 50px;
-    min-width: 200px;
 }
 
 .search-icon{
@@ -108,7 +109,8 @@ body {
 }
 
 .search-placeholder{
-    color: var(--väri-musta);
+    color: var(--väri-valkoinen);
+    background-color: rgb(26, 30, 33);
     font-size: 16px;
     font-family: var(--fontti-perhe-leipäteksti);
     padding-top: 12px;
@@ -293,7 +295,10 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 10px 0;
-    min-height: 320px;
+}
+
+.sivun-alapalkki__sarake{
+    flex: 1;
 }
 
 .footer__row1__box {
@@ -301,13 +306,7 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
-    padding-left: 11px;
-    padding-right: 11px;
     margin-bottom: 27px;
-    min-width: 260px;
-    min-height: 275px;
-    max-width: 260px;
-    max-height: 290px;
 }
 
 .asiakaspalvelu {
@@ -316,8 +315,8 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     border-bottom: solid 1px grey;
-    min-width: 238px;
-    max-width: 238px;
+    margin-bottom: var(--väli-x1);
+    padding-bottom: var(--väli-x1);
     padding-right: 11px;
 }
 
@@ -368,7 +367,6 @@ body {
     flex-direction: row;
     font-size: var(--fontti-koko-leipäteksti);
     font-family: sans-serif;
-    margin-bottom: 16px;
 }
 
 .email-icon{
@@ -431,13 +429,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-left: 11px;
-    padding-right: 11px;
     margin-bottom: 25px;
-    min-width: 260px;
-    min-height: 275px;
-    max-width: 260px;
-    max-height: 275px;
 }
 
 .myymälä-turku__header {
@@ -473,6 +465,7 @@ body {
     font-size: var(--fontti-koko-leipäteksti);
     font-family: sans-serif;
     margin-bottom: 16px;
+    padding-right: var(--väli-x1);
 }
 
 .myymälä-turku__location {
@@ -499,11 +492,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-left: 11px;
-    padding-right: 11px;
     margin-bottom: 25px;
-    max-width: 260px;
-    max-height: 160px;
 }
 
 .yhteisöt__header {
@@ -533,11 +522,7 @@ body {
 .tilaa-uutiskirje {
     display: flex;
     flex-direction: column;
-    padding-left: 11px;
-    padding-right: 11px;
     margin-bottom: 25px;
-    max-width: 260px;
-    max-height: 160px;
 }
 
 .tilaa-uutiskirje__header {
@@ -583,10 +568,6 @@ body {
     flex-direction: column;
     padding-left: 11px;
     padding-right: 11px;
-    min-width: 260px;
-    min-height: 290px;
-    max-width: 260px;
-    max-height: 330px;
 }
 
 .info__header {
@@ -621,8 +602,6 @@ body {
     flex-direction: column;
     padding-left: 12px;
     padding-right: 12px;
-    max-width: 260px;
-    max-height: 210px;
 }
 
 .shop-in-shops__header {
@@ -672,14 +651,18 @@ body {
     content: none;
 }
 
-a:link{
+.footer a:any-link, 
+.header a:any-link,
+section a:any-link:not(.explore-products-button){
     font-size: var(--fontti-koko-leipäteksti);
     color: var(--väri-valkoinen);
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
 
-a:hover{
+.footer a:any-link:hover, 
+.header a:any-link:hover,
+section a:any-link:hover {
     color: orange;
 }
 
@@ -698,12 +681,6 @@ a:hover{
 .artikkelit-ja-blogit {
     display: flex;
     flex-direction: column;
-    padding-left: 12px;
-    padding-right: 12px;
-    min-width: 260px;
-    min-height: 210px;
-    max-width: 260px;
-    max-height: 210px;
 }
 
 .artikkelit-ja-blogit__header {
@@ -725,21 +702,19 @@ a:hover{
 .sertifikaatit-ja-palkinnot {
     display: flex;
     flex-direction: column;
-    padding-left: 11px;
-    padding-right: 11px;
 }
 
 .sertifikaatit-ja-palkinnot__header {
     display: flex;
     flex-direction: row;
-    max-width: 180px;
-    min-width: 180px;
 }
 
 .sertifikaatit-ja-palkinnot__imgs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    gap: var(--väli-x1);
+    flex-wrap: wrap;
     padding: 0;
 }
 
@@ -757,9 +732,9 @@ a:hover{
     color: var(--väri-valkoinen);
     background-color: blue;
     border-radius: 50%;
-    padding-top: 38px;
-    padding-left: 12px;
-    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .palkinto{
@@ -767,8 +742,9 @@ a:hover{
     border-radius: 50%;
     color: var(--väri-valkoinen);
     background-color: orangered;
-    padding-top: 38px;
-    padding-left: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row3 {
@@ -854,19 +830,18 @@ a:hover{
 .page-content__product-box{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    justify-content: space-between;
     margin: 16px var(--väli-x1) 0;
     border-radius: 3px;
     border: 0.5px solid rgb(60, 66, 74);
     background-color: hsl(0, 0%, 20%);
-    max-width: 170px;
 }
 
 .product-box__photo{
     display: flex;
-    min-width: 170px;
     min-height: 170px;
     max-height: 170px;
-    max-width: 170px;
     align-items: center;
     justify-content: center;
     border-bottom: 0.5px solid rgb(60, 66, 74);
@@ -880,7 +855,6 @@ a:hover{
     flex-direction: column;
     padding: var(--väli-x1);
     background-color: hsl(0, 0%, 20%);
-    min-height: 143px;
 }
 
 .product-description{
@@ -981,9 +955,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     margin-top: var(--väli-x1);
-    min-width: 155px;
     min-height: 31px;
-    max-width: 155px;
     max-height: 31px;
     background-color: green;
     color: var(--väri-valkoinen);
@@ -1019,7 +991,7 @@ a:hover{
 .ducky-banner{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     min-width: 350px;
     padding: 0 12px;
@@ -1030,10 +1002,11 @@ a:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     min-width: 380px;
     min-height: 350px;
     position: relative;
-    background-color: var(--väri-musta);
+    background-color: rgb(245, 90, 90);
     color: var(--väri-valkoinen);
     justify-items: center;
 }
@@ -1049,7 +1022,7 @@ a:hover{
     background-color: var(--väri-valkoinen);
     border-radius: 3px;
     position: absolute;
-    top: 588px;
+    top: 518px;
 }
 
 .explore-products-button:link{
@@ -1070,13 +1043,17 @@ section{
 }
 
 @media (max-width: 700px) {
+    .footer__content-box{
+        margin: 0;
+    }
+
     .header__top-row__login-button > .btn-text{
         display: none;
     }
 
     .product-list-row{
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .header__top-row__logo, .header__top-row__login-button, .header__top-row__basket-icon{
@@ -1101,10 +1078,8 @@ section{
     }
 
     .product-box__photo{
-        min-width: calc(170px / 1.5);
         min-height: calc(170px / 1.5);
         max-height: calc(170px / 1.5);
-        max-width: calc(170px / 1.5);
     }
     
     .product-info{
